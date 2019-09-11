@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import PhotoCard from "./PhotoCard";
+import PhotoList from "./PhotoList";
 
 function App() {
   return (
