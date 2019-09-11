@@ -19,7 +19,13 @@ const PhotoList = () => {
     }, [])
     return (
         <div className='map-list'>
-            
+            {photo.map(item => {
+                return <PhotoCard key={item.id} 
+                alt={item.title}
+                src={item.url}
+                description={item.explanation}
+                />
+            })}
         </div>
     )
 }
