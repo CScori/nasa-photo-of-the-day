@@ -1,9 +1,10 @@
 import React from 'react'
 
-const PhotoCard = () => {
+const PhotoCard = props => {
     return (
-        <div>
-            
+        <div className='nasa' key={props.id}>
+          <img className='nasa-photo' alt='chnge to src' src={props.img} />
+          <p>{props.desc}</p>
         </div>
     )
 }
