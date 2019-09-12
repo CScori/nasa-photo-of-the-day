@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+
 import PhotoCard from "./PhotoCard";
 
 const PhotoList = () => {
@@ -18,21 +19,23 @@ const PhotoList = () => {
             console.log('api err or timeout', err)
         })
     }, [date])
+     setDate(2011-12-11)
     return (
+
         <div className='map-list'>
-            {photo.map(item => {
-                return <PhotoCard key={item.id} 
-                alt={item.title}
-                src={item.url}
-                description={item.explanation}
-                date={date}
-                />
-            })}
-            
-                <button onClick={() setDate(2011-12-11)}>Change The Date</button>
+            <PhotoCard key={photo.id} 
+                alt={photo.title}
+                src={photo.url}
+                description={photo.explanation}
+                date={date} />
 
         </div>
     )
 }
 
 export default PhotoList
+
+
+  
+ 
+  
