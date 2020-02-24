@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
-import PhotoList from "./PhotoList";
-import PhotoCard from "./PhotoCard";
-import Header from "./Header";
+import PhotoList from "./comps/PhotoList";
+import Header from "./comps/Header";
 
 
 function App() {
