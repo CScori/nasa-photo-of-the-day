@@ -7,8 +7,8 @@ import {
 const PhotoCard = props => {
 
     return (
-            <Card key={props.id}> 
-              <CardImg top width="100%" src={props.img} alt={props.title} />
+            <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} width='70%' key={props.id}> 
+              <CardImg top width="25%" src={props.img} alt={props.title} />
               <CardBody>
                 <CardTitle>{props.title}</CardTitle>
                 <CardText>Image Description: {props.explanation}</CardText>

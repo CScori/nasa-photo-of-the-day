@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-image: url('../src/img/starry-sky-998641.jpg');
+  color: honeydew
 }
 
 .App-logo {
